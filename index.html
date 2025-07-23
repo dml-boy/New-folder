@@ -16,10 +16,20 @@
       color: #111827;
     }
 
+    /* Container now full-width on mobile */
     .container {
-      max-width: 420px;
+      width: 100%;
+      padding: 0 16px;
       margin: 0 auto;
-      padding: 60px 16px 90px;
+      box-sizing: border-box;
+    }
+
+    /* Constrain container and add padding on larger screens */
+    @media (min-width: 768px) {
+      .container {
+        max-width: 420px;
+        padding: 60px 16px 90px;
+      }
     }
 
     .back-btn {
